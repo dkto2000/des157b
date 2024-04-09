@@ -1,0 +1,227 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+
+video {
+
+    height: 750px;
+  
+  }
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top:20%;
+    left:25%;
+    text-align: center;
+    background-color: #33333374;
+    width:50%;
+}
+
+header.switch {
+    color:white;
+   
+}
+
+header.second {
+    color:white;
+}
+h3 {
+    text-align: center;
+   
+
+}
+
+/* Page styling */
+body {
+    background-color:#0a1f23;
+    color: rgb(235, 235, 235);
+    transition: all 0.5s;
+    overflow-x: hidden;
+}
+
+body.switch {
+    background-color: rgb(235, 235, 235);
+    color: #333;
+}
+
+body.second {
+    background-color: rgb(18, 9, 9);
+}
+
+
+header {
+    margin: 0 auto 2em auto;
+ 
+}
+
+
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1px;
+   
+    
+}
+
+main section {   
+    flex: 1;
+    border: 0.2rem solid #F9CA0F;
+    margin: 0.5em;
+    height:60px;
+    
+
+    
+}
+
+
+.dropdown-content {
+    display: none;
+  list-style-type: none;
+  }
+.dropdown-content a{
+ text-decoration: none;
+
+}
+ 
+#projects:hover .dropdown-content {
+    display: block;
+}
+
+#research:hover .dropdown-content {
+    display: block;
+}
+#capstone:hover .dropdown-content {
+    display: block;
+}
+#development:hover .dropdown-content {
+    display: block;
+}
+nav ol, nav ul {
+    text-align: center;
+    padding:15px;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: white;
+}
+
+section a:hover {
+    background-color: #ecc219;
+    color: #333;
+}
+
+section.switch a {
+    color: #333;
+}
+
+section.second a {
+    color: white;
+}
+
+section.switch a:hover {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 350px;
+    left:33%;
+    padding: 20px;
+    width:200px;
+    background-color: #0B4F6C;
+    color:#FCFAFA;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    
+}
+button:hover {
+    background-color: #FCFAFA;
+    color: #0B4F6C;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: #FCFAFA;
+    color: #0B4F6C;
+}
+
+button.switch:hover {
+    background-color: #ecc219;
+    color: rgb(235, 235, 235);
+    transition: all 0.5s;
+}
+
+button.second {
+    background-color: #ecc219;
+    color: rgb(235, 235, 235);
+
+}
+
+button.second:hover {
+    background-color: rgb(18, 9, 9);
+    color:white;
+    transition: all 0.5s;
+}
+
+@media only screen and (min-width: 600px) {
+    button{
+     position: absolute;
+     left: calc(50% - 95px);
+      }
+ main {
+  margin:auto;
+    width: calc(100% - 300px);
+ }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        position: absolute;
+        top:0%;
+        left:10%;
+   text-align: left;
+        background-color: #33333300;
+        width:50%;
+        color: black;
+    }
+    header.second {
+        color:white;
+    }
+    video {
+        max-width: 100%;
+    display: block;
+    height: auto;
+      }
+
+      button {
+        position: absolute;
+        top:5%;
+       left:70%;
+      }
+      main {
+        display: flex;
+       flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+
+    }
+}
