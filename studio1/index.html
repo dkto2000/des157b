@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>BlockBuster Video!</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link href="styles.css" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <video id="myVideo" poster="images/rock.JPG" controls muted loop autoplay playsinline>
+  <video id="myVideo" poster="images/rock.JPG" muted autoplay loop playsinline>
     <source src="media/rock.webm" type="video/webm" >
     <source src="media/rock.mp4" type="video/mp4" >
 
@@ -17,5 +18,16 @@
     Here is a <a href="media/rock.mp4">link to the video</a> instead.</p>
 
     </video>
+
+    <i class="fas fa-filter"></i>
+    <i class="fas fa-expand"></i>
+
+
+    <section id="haiku">
+      <p id="line1" class="hidden">THE SONGS OF LIFE</p>
+      <p id="line2" class="hidden">LIES WITHIN</p>
+      <p id="line3" class="hidden">THE WAVES AROUND</p>
+    </section>
+
 </body>
 </html>
