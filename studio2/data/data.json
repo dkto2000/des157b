@@ -1,0 +1,57 @@
+[
+   {
+      "title":"Fallout",
+      "type":"show",
+      "platform":"Amazon Prime",
+      "date_watched":"2024-04-16",
+      "episode_count":"9"
+   },
+   {
+      "title":"Jujutsu Kaisen",
+      "type":"show",
+      "platform":"Crunchryoll",
+      "date_watched":"2024-04-17",
+      "episode_count":"26"
+   },
+   {
+      "title":"Three Body Problem",
+      "type":"show",
+      "platform":"Netflix",
+      "date_watched":"2024-04-18",
+      "episode_count":"8"
+   },
+   {
+      "title":"X-Men '97",
+      "type":"show",
+      "platform":"Disney Plus",
+      "date_watched":"2024-04-19",
+      "episode_count":"10"
+   },
+   {
+      "title":"Shogun",
+      "type":"show",
+      "platform":"Hulu",
+      "date_watched":"2024-04-20",
+      "episode_count":"10"
+   },
+   {
+      "title":"Evangelion",
+      "type":"show",
+      "platform":"Netflix",
+      "date_watched":"2024-04-21",
+      "episode_count":"26"
+   },
+   {
+      "title":"End of Evangelion",
+      "type":"movie",
+      "platform":"Netflix",
+      "date_watched":"2024-04-22"
+   },
+   {
+      "title":"Dragon-Ball Z: Kai",
+      "type":"show",
+      "platform":"Crunchyroll",
+      "date_watched":"2024-04-22",
+      "episode_count":"100"
+   }
+]
