@@ -17,14 +17,14 @@
 
     function showMoodInfo(point, data){
         const captions = [
-            ' <img src="images/likethat.JPG" alt="likethatpic" id="likethat">',
-            ' <img src="images/pushups.JPG" alt="pushupspic" id="pushups">',
-            ' <img src="images/euphoria.JPG" alt="euphoriapic" id="euphoria">',
-            ' <img src="images/familymatters.JPG" alt="familymatterspic" id="familymatters">',
-            ' <img src="images/la.JPG" alt="lapic" id="la">',
-            ' <img src="images/notlikeus.JPG" alt="notlikeuspic" id="notlikeus">',
-            ' <img src="images/theheart.JPG" alt="theheartpic" id="theheart">',
-            ' <img src="images/bbldrizzy.JPG" alt="bbldrizzypic" id="bbldrizzy">',
+            ' <img src="images/likethat.jfif" alt="likethatpic" id="likethat">',
+            ' <img src="images/pushups.jfif" alt="pushupspic" id="pushups">',
+            ' <img src="images/euphoria.jfif" alt="euphoriapic" id="euphoria">',
+            ' <img src="images/familymatters.jfif" alt="familymatterspic" id="familymatters">',
+            ' <img src="images/meetthegrahams.jfif" alt="lapic" id="la">',
+            ' <img src="images/aminor.jfif" alt="notlikeuspic" id="notlikeus">',
+            ' <img src="images/theheart.jfif" alt="theheartpic" id="theheart">',
+            ' <img src="images/prison.jfif" alt="bbldrizzypic" id="bbldrizzy">',
 
         ];
 
