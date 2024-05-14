@@ -1,10 +1,13 @@
-body {
-  background-color: orange;
-  line-height: 120px;
+@font-face {
+  font-family: myFont;
+  src: url(fonts/digital-7\ \(mono\).ttf);
 }
 
-main{
-  padding:100px;
+body {
+  background-color: black;
+  line-height: 100px;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
 }
 
 h1 {
@@ -12,12 +15,67 @@ h1 {
   color: whitesmoke;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 #time {
+  font-family: myFont;
   text-align: center;
   background-color: gainsboro;
   border-radius: 30px;
-  width:50%;
-  font-size: 100px;
+  width:480px;
+  font-size: 80px;
   margin: auto;
 }
 
+
+img{
+  display: flex;
+  margin:auto;
+  height:300px;
+  width:300px;
+}
+
+#pep {
+  display: flex;
+  margin:auto;
+}
+
+@media only screen and (min-width: 1024px) {
+ img {
+  display: inline;
+  margin-left: calc(50% - 600px);
+  padding:150px;
+  height:450px;
+  width:450px;
+ }
+ h1 {
+  text-align: center;
+  position: absolute;
+  left:55%;
+  top:40%;
+  width:40%;
+
+ }
+
+ #time {
+  position: absolute;
+  left:55%;
+  top:60%;
+  width:40%;
+ }
+
+ #pep {
+  width:80%;
+  position: absolute;
+  top:85%;
+  left:10%;
+ }
+
+}
+@media only screen and (min-width: 1200px) {
+  #pep {
+    width:80%;
+    position: absolute;
+    top:85%;
+    left:12%;
+   }
+}
