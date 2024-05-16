@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+ }
+ .section {
+  text-align: center;
+  font-size: 3em;
+}
+#fore{
+width:300px;
+}
+#bam {
+width:300px;
+}
+#kni {
+width:300px;
+}
+
+p {
+color:white;
+}
+

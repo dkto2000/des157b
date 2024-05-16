@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Liberty</title>
+ 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css" integrity="sha512-AIwt5sjXSKDo4t0KSQ/eAuy43kQMc1hYtIKLxaFrHd26nQFzMo1FJdBIickVyGXnhm2xB2OOYBqMBgu3dBU4KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="styles.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="script.js" defer></script>
+</head>
+<body>
+  <div id="fullpage">
+    <div class="section">
+      <div class="slide" style="background-image:url(images/autumn.jpg); background-size: cover;
+      background-repeat: no-repeat;"></div>
+      <div class="slide" style="background-image:url(images/forrest.jpg); background-size: cover;
+      background-repeat: no-repeat;"></div>
+      <div class="slide" style="background-image:url(images/sakura.jpg); background-size: cover;
+      background-repeat: no-repeat;"></div>
+      <div class="slide" style="background-image:url(images/nightlife.jpg); background-size: cover;
+      background-repeat: no-repeat;"></div>
+  </div>
+    <div class="section"> 
+      <div data-aos="fade-right"><img src="images/town.jpg" alt="fore" id="fore"></div>
+    </div>  
+    <div class="section">
+      <div data-aos="flip-left"><img src="images/bamboo.jpg" alt="bam" id="bam"></div>
+    </div>
+    <div class="section">
+      <div data-aos="zoom-in-down"><img src="images/knight.jpg" alt="kni" id="kni"></div>
+  </div>
+  <div class="section">
+    <footer>
+      <div data-aos="flip-up"><p>Credits to:</p></div>
+      <div data-aos="zoom-in-left"><a href="https://michalsnik.github.io/aos/">Animate on Scroll Library</a></div>
+      <div data-aos="zoom-in-right"><a href="https://alvarotrigo.com/fullPage/docs/">fullPage Library</a></div>
+    </footer>
+</div>
+</div>
+
+</body>
+</html>

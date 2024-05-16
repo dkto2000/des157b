@@ -38,7 +38,9 @@
             '<source src="sound/theheart.mp3" type="audio/mp3">',
             '<source src="sound/bbldrizzy.mp3" type="audio/mp3">'
         ];
-        document.querySelector('#pep').innerHTML = sounds[ data[point].sound ];
+        const sound = document.querySelector('#pep');
+        sound.innerHTML = sounds[ data[point].sound ];
+        sound.play();
         document.querySelector('#title').innerHTML = data[point].title;
         document.querySelector('#cover').innerHTML = captions[ data[point].cover ];
         document.querySelector('#date').innerHTML = data[point].date;
