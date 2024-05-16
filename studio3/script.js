@@ -8,5 +8,7 @@
   autoScrolling:false,
   scrollHorizontally: true
   });
-
+  new fullpage('#fullpage', {
+    licenseKey: gplv3-license
+  });
 })(); // end IIFE
