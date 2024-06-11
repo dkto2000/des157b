@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Liberty</title>
+ 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css" integrity="sha512-AIwt5sjXSKDo4t0KSQ/eAuy43kQMc1hYtIKLxaFrHd26nQFzMo1FJdBIickVyGXnhm2xB2OOYBqMBgu3dBU4KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="styles.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/interactiveimagejs@2.7.1/dist/interactive-image.min.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="turn.js"></script>
+
+<script src="script.js" defer></script>
+</head>
+<body>
+  <div id="fullpage">
+    <div class="section" style="background-image:url(images/Group\ 3.jpg); background-size: cover;
+      background-repeat: no-repeat;"></div>
+    <div class="section"> <div>
+      <p>Press right arrow key to turn the page</p>
+    </div>
+      <div id="book">
+      <div class="hard" style="background-image:url(images/Designer\ \(3\).png); background-size: cover;
+      background-repeat: no-repeat;"></div>
+      <div class="hard" style="background-image:url(images/rugged1.png); background-size: cover;
+      background-repeat: no-repeat;">
+    </div>
+      <div class="one" style="background-image:url(images/rugged2.png); background-size: cover;
+      background-repeat: no-repeat;">
+       <div id="app"></div>
+    </div>
+      <div class="two">
+        <div id="norm">
+          <div id="text2"></div>
+        </div>
+      </div>
+      <div class="three">
+        <div id="my-interactive-image"><div class="instruct">Hover Over Here</div></div>
+      </div>
+      <div class="four" style="background-image: url(images/charger1.png);background-size: cover;
+      background-repeat: no-repeat;"></div>
+      <div class="five">
+     <div class="inserts1"> <div>
+      <canvas id="myChart"></canvas>
+    </div></div>
+      </div>
+      <div class="six" style="background-image: url(images/flight1.png);background-size: cover;
+      background-repeat: no-repeat;"></div>
+      <div class="seven">
+        <div class="inserts2"></div>
+      </div>
+      <div class="hard"></div>
+   </div></div>
+</div>
+
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/interactiveimagejs@2.7.1/dist/interactive-image.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script type="text/javascript">
+    const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['2024', '2074'],
+    datasets: [{
+      label: 'Total of Electric Vehicles Owners in the millions',
+      data: [3, 2, 1, 0],
+      borderWidth: 3
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+  
+});
+  $(window).ready(function() {
+    
+    
+      $('#book').turn({
+                          
+                          display: 'double',
+                          acceleration: true,
+                          gradients: !$.isTouch,
+                          elevation:50,
+                          autoCenter: true,
+                    
+                          when: {
+                              turned: function(e, page) {
+                                   /*console.log('Current view: ', $(this).turn('view'));*/
+                            
+                              }
+                          }
+                       });
+  });
+  $(window).bind('keydown', function(e){
+      if (e.keyCode==37)
+          $('#book').turn('previous');
+      else if (e.keyCode==39)
+          $('#book').turn('next');
+  });
+</script>
+
+</body>
+</html>

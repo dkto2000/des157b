@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Version 1</title>
+ 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css" integrity="sha512-AIwt5sjXSKDo4t0KSQ/eAuy43kQMc1hYtIKLxaFrHd26nQFzMo1FJdBIickVyGXnhm2xB2OOYBqMBgu3dBU4KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="styles.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/interactiveimagejs@2.7.1/dist/interactive-image.min.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="turn.js"></script>
+
+<script src="script.js" defer></script>
+</head>
+<body>
+
+    </div>
+      <div id="book">
+      <div class="hard" style="background-image:url(images/Designer\ \(3\).png); background-size: cover;
+      background-repeat: no-repeat;"></div>
+      <div class="hard" style="background-image:url(images/rugged1.png); background-size: cover;
+      background-repeat: no-repeat;">
+    </div>
+      <div class="one" style="background-image:url(images/rugged2.png); background-size: cover;
+      background-repeat: no-repeat;">
+      
+    </div>
+      <div class="two">
+        <div id="norm">
+      
+          <div>
+          
+          </div>
+        </div>
+      </div>
+      <div class="three">
+        <div id="my-interactive-image"></div>
+      </div>
+      <div>Page 4</div>
+      <div>Page 5</div>
+      <div>Page 6</div>
+      <div>Page 7</div>
+      <div>Page 8</div>
+      <div class="hard"></div>
+      <div class="hard"></div>
+   </div></div>
+</div>
+
+
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/interactiveimagejs@2.7.1/dist/interactive-image.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script type="text/javascript">
+    const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['2024 model', '2074 model'],
+    datasets: [{
+      label: 'Speed mph (miles per hour)',
+      data: [35, 20, 10, 5],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+  
+});
+  $(window).ready(function() {
+    
+    
+      $('#book').turn({
+                          
+                          display: 'double',
+                          acceleration: true,
+                          gradients: !$.isTouch,
+                          elevation:50,
+                          autoCenter: true,
+                    
+                          when: {
+                              turned: function(e, page) {
+                                   /*console.log('Current view: ', $(this).turn('view'));*/
+                            
+                              }
+                          }
+                       });
+  });
+  $(window).bind('keydown', function(e){
+      if (e.keyCode==37)
+          $('#book').turn('previous');
+      else if (e.keyCode==39)
+          $('#book').turn('next');
+  });
+</script>
+
+</body>
+</html>

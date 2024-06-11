@@ -1,0 +1,115 @@
+body {
+  background-color: black;
+ }
+ .section {
+  text-align: center;
+  font-size: 3em;
+}
+#fore{
+width:300px;
+}
+#bam {
+width:300px;
+}
+#kni {
+width:300px;
+}
+
+b { 
+  color:black;
+  position: absolute;
+  top:35%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  left:10%;
+  width:80%;
+}
+
+#book{
+  margin: auto;
+    width:1002px;
+    height:643px;
+}
+#book .turn-page{
+    background-color:#ccc;
+  
+} 
+p{
+  font-family: myFont;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  float:  left;
+  width:40%;
+  font-size: 50px;
+  padding-left:60px;
+  padding-top: 120px;
+}
+
+#app {
+  color: rgb(240, 240, 240);
+  padding-top:360px;
+  padding-left:60px ;
+  width:80%;
+  font-family: difFont;
+  font-size: 40px;
+}
+#text2 {
+  color: black;
+  padding-left:50px;
+  width:80%;
+  font-family: difFont;
+  font-size: 40px;
+
+}
+@font-face {
+font-family: myFont;
+src: url(fonts/Instruction\ Bold.otf);
+font-family: difFont;
+src:url(fonts/Motor-Go4D.ttf)
+}
+#norm {
+  margin: auto;
+  height: 100vh;
+  background-image: url(images/rail1.png);
+  background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.instruct {
+  padding-top: 20px;
+  font-family: myFont;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+}
+.interactive-image {
+  margin: auto;
+  height: 100vh;
+  background-image: url(images/rail2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inserts1 {
+  margin: auto;
+  height: 100vh;
+  background-image: url(images/charger2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inserts2 {
+  margin: auto;
+  height: 100vh;
+  background-image: url(images/flight2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#myChart {
+  position: absolute;
+  top:10%;
+  left:0%;
+  background-color: rgba(255, 255, 255, 0.454);
+  color:black;
+ 
+}
