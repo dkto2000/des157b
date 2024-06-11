@@ -30,7 +30,10 @@
 <body>
   <div id="fullpage">
     <div class="section" style="background-image:url(images/Group\ 3.jpg); background-size: cover;
-      background-repeat: no-repeat;"></div>
+      background-repeat: no-repeat;">
+      <div id="text1"></div>
+      <div id="scroly">Scroll Down</div>
+    </div>
     <div class="section"> <div>
       <p>Press right arrow key to turn the page</p>
     </div>
@@ -53,18 +56,29 @@
         <div id="my-interactive-image"><div class="instruct">Hover Over Here</div></div>
       </div>
       <div class="four" style="background-image: url(images/charger1.png);background-size: cover;
-      background-repeat: no-repeat;"></div>
+      background-repeat: no-repeat;">
+     <div id="text3"></div>  
+    </div>
       <div class="five">
      <div class="inserts1"> <div>
       <canvas id="myChart"></canvas>
     </div></div>
       </div>
       <div class="six" style="background-image: url(images/flight1.png);background-size: cover;
-      background-repeat: no-repeat;"></div>
+      background-repeat: no-repeat;">
+         <div id="text4"></div>
+     <div class="chart-container" style="height:40vh; width:120vw">
+      <canvas id="myChart2"></canvas>
+  </div>  
+    
+    </div>
       <div class="seven">
-        <div class="inserts2"></div>
+        <div class="inserts2">
+          </div>
       </div>
-      <div class="hard"></div>
+      
+      <div class="hard" style="background-image: url(images/backcover.png);background-size: cover;
+      background-repeat: no-repeat;"></div>
    </div></div>
 </div>
 
@@ -74,7 +88,33 @@
 
 <script type="text/javascript">
     const ctx = document.getElementById('myChart');
+    const dmx = document.getElementById('myChart2');
 
+    new Chart(dmx, {
+      type: 'doughnut',
+    data: {
+      labels: ['Flight Cancelled','Flight Approved'],
+      datasets: [{ 
+        label: 'Chances',
+    data: [300, 50],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)'
+     
+    ],
+      }]
+      
+    },
+    options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});  
+  
+    
 new Chart(ctx, {
   type: 'bar',
   data: {

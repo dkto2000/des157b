@@ -5,7 +5,10 @@
 
    // typewriter
    var app = document.getElementById('app');
+   var text1 = document.getElementById('text1');
    var text2 = document.getElementById('text2');
+   var text3 = document.getElementById('text3');
+   var text4 = document.getElementById('text4');
   
    var typewriter = new Typewriter(app, {
        loop: true
@@ -19,10 +22,35 @@
        .pauseFor(10000)
        .start();
 
+       var typewriter = new Typewriter(text1, {
+        loop: true
+    });
+ 
+    
+    typewriter.typeString("The Future Decline to Infrastructure")
+        .pauseFor(2500)
+        .deleteAll()
+        .start();
        var typewriter = new Typewriter(text2, {
         loop: true
     });
        typewriter.typeString("Coming to a neighborhood near you comes the Bart T-74!")
+       .pauseFor(2500)
+       .deleteAll()
+       .start();
+
+       var typewriter = new Typewriter(text3, {
+        loop: true
+    });
+       typewriter.typeString("The electric car market has never seen better days! Our Fellow Americans might not be buying as much as before but they sure know how to keep em!")
+       .pauseFor(2500)
+       .deleteAll()
+       .start();
+
+       var typewriter = new Typewriter(text4, {
+        loop: true
+    });
+       typewriter.typeString("Flight have been more efficient now that there aren't many people boarding planes anymore! Heck getting a flight in general is a fun lottery for a lot of folk who like to lose!")
        .pauseFor(2500)
        .deleteAll()
        .start();
